@@ -13,11 +13,14 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 
 import 'hammerjs';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { DishService } from './services/dish.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,9 @@ import 'hammerjs';
     MatListModule,  
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    DishService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
