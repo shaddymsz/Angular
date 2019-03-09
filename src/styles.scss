@@ -33,3 +33,6 @@ $divider-color:        #BDBDBD;
     margin: 0px auto;
     padding: $pad-up-down $pad-left-right;
 }
+.flex-spacer {
+    flex: 1 1 auto;
+}
